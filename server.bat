@@ -13,6 +13,6 @@ echo To shut down the server close this window first!
 echo (%date%)  -  (%time%) %name% server start.
 
 :server
-start /wait /abovenormal h1-mod.exe "%gamepath%" -dedicated +exec "server.cfg" +net_port %port% +map_rotate
+start /wait /abovenormal h1-mod.exe "%gamepath%" -dedicated +exec "server.cfg" +set net_port %port% +map_rotate
 echo (%date%)  -  (%time%) WARNING: %name% server closed or dropped... server restarts.
 goto server
